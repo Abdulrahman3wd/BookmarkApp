@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Bookmark-PNG-File.png" type="png/icon">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+
+
+  <div class="main"> 
+    <div class="container p-4 ">
+
+      <div class=" ">
+        <div class="d-flex align-items-center justify-content-center m-auto head-text">
+          <h1 class="">bookmarker</h1>
+        </div>
+        <div class="line "></div>
+        <div class="bookmark-text d-flex justify-content-center mt-4">
+          <h2 class="gradint">
+            <i class="fa-solid fa-bookmark bookmark-icon"></i>
+            bookamrk your favorite sites
+            <i class="fa-solid fa-bookmark bookmark-icon"></i>
+
+          </h2>
+        </div>
+
+      </div>
+
+
+      <!-- inputs -->
+
+
+      <div>
+          <div class="siteName w-100 d-flex flex-column justify-content-center mt-3 ">
+            <label for="siteName" class="pb-2 fw-semibold"> 
+              <i class="fa-solid fa-bookmark bookmark-icon"></i>
+              Site Name
+            </label>
+            <input onkeyup="" type="text" value="" id="siteName" placeholder="Bookmark Name" class="form-control  namesite">
+          </div>
+
+
+
+          <div class="siteName w-100 d-flex flex-column justify-content-center mt-3 ">
+            <label for="url" class="pb-2 fw-semibold"> 
+              <i class="fa-solid fa-link-slash"></i> 
+            Site URL
+  
+  
+            </label>
+            <input type="email" value="" id="url" placeholder="Bookmark Name" class="form-control  ">
+          </div>
+          <div class="text-center">
+            <button onclick="submitWebsite()"  class="btn btn-submit px-5 mt-4 " data-bs-toggle="modal" data-bs-target="#exampleModal"  id="submitBtn">submit</button>
+
+          </div>
+
+
+
+
+      </div>
+      <div class="line "></div>
+
+      <table id="table" class="table mt-4 text-center bg-light">
+        <thead>
+          <th>index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+
+
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+      <div class="">
+        <button onclick="AreYouSure() " class="btn btn-danger" >Clear All</button>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="Sure " id="sure" >
+
+  </div>
+  <div id="repeat">
+  
+  </div>
+  
+
+<!-- test btn -->
+<!-- <button onclick="AreYouSure()" class="btn btn-danger" id="demo" data-bs-toggle="modal" data-bs-target="#exampleModa2">dsadsa</button> -->
+
+<div id="dd"></div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</div>
+</body>
+</html>
